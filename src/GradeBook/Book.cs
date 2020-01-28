@@ -37,6 +37,10 @@ namespace GradeBook
             {
                 grades.Add(grade);
             }
+            else
+            {
+                throw new ArgumentException($"Invalid {nameof(grade)}");
+            }
         }
 
         public Statistics GetStatistics()
